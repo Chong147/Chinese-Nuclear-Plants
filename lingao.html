@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岭澳核电厂</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #4b0082;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        main img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        main p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        main li {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        .quiz {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(240, 248, 255, 0.9);
+            border-radius: 10px;
+        }
+        .quiz h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .quiz button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4b0082;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quiz button:hover {
+            background-color: #6a0dad;
+        }
+        .quiz .result {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #4b0082;
+        }
+        footer a {
+            color: #4b0082;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes float-up {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function checkAnswer(answer) {
+            const result = document.getElementById("quiz-result");
+            // 重置动画
+            result.style.animation = 'none';
+            result.offsetHeight;  // 触发重绘
+            result.style.animation = 'float-up 1.5s ease-out both';
+
+            if (answer === "6000") {
+                result.textContent = "正确答案，据大亚湾核电运营管理有限责任公司消息指出，截至2023年3月16日，中广核岭澳核电站1号机组实现连续安全运行6000天，创造了国际同类型机组连续安全运行天数的最高纪录。";
+                result.style.color = "green";
+            } else {
+                result.textContent = "不正确，再想一想吧！";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>岭澳核电厂</h1>
+    </header>
+    <main>
+        
+<h2>地理位置</h2>
+<p>中国广东省深圳市大鹏新区大鹏半岛</p>
+
+<h2>核电厂历史</h2>
+<p>一期1号机组于1997年始建，于2002年并网成功并在同年正式商转；</p>
+<p>一期2号机组于1997年始建，于2002年并网成功并在次年正式商转；</p>
+<p>二期1号机组于2005年始建，于2010年并网成功并在同年正式商转；</p>
+<p>二期2号机组于2006年始建，于2011年并网成功并在同年正式商转。</p>
+
+<h2>堆形与数量</h2>
+<p>截止2024年11月，岭澳核电厂有2台运行中的M310型号压水堆（一期1，2号）以及2台运行中的的CPR1000型号压水堆（二期1，2号）。</p>
+
+<h2>发电基本原理</h2>
+<p>压水堆（Pressurized Water Reactor）是采用高压水来冷却核燃料的一种反应堆，其工作原理为：主泵将120～160个大气压的一回路冷却水送入堆芯，把核燃料放出的热能带出堆芯，而后进入蒸汽发生器，
+通过传热管把热量传给二回路水，使其沸腾并产生蒸汽，常在一回路水中加入硼酸，用以控制反应性的慢变化。之后，二回路产生的高压蒸汽会推动汽轮机发电，再经过冷凝器和预热器进入蒸汽发生器，完成二回路水循环。
+压水堆的工作原理图如下所示：</p>
+
+<div style="text-align: center; margin: 20px 0;">
+<img src="yashuidui.png" alt="压水堆" style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+<p>图1：压水堆示意图</p>
+</div>
+
+<h2>荣誉与贡献</h2>
+<p>自1994年首台机组投入商业运行以来，大亚湾核电基地持续保持安全稳定运行，运营业绩稳居国际核能领域第一方阵。根据世界核营运者协会（WANO）的评估，2016年基地六台机组中72项指标有43项达到世界前1/10水平，
+卓越率达59.7%。其中，岭澳一期1号机组连续安全运行4146天，位居全球第一，大亚湾2号机组以3026天排名第三，显示出卓越的管理和技术水平。作为粤港两地的重要清洁电力供应基地，截至2017年6月底，六台机组累计上
+网电量达6406.16亿度，其中供港电量2299.42亿度，占香港用电量的四分之一，供粤电量约占广东用电量的十分之一，为区域经济发展和绿色能源转型提供了强有力支持。</p>
+
+        <img src="lingao.png" alt="岭澳核电厂">
+       <div style="text-align: center; margin: 20px 0;">
+            <p>图3：岭澳核电厂全景</p>
+            </div>
+        <div class="quiz">
+            <h2>截至2023年3月，岭澳核电厂1号机组已实现连续安全运行约多少天？</h2>
+            <button onclick="checkAnswer('6000')">6000天</button>
+            <button onclick="checkAnswer('7000')">7000天</button>
+            <button onclick="checkAnswer('5000')">5000天</button>
+            <div id="quiz-result" class="result"></div>
+</div>
+<p><strong>参考文献</strong></p>
+<p>1. 俞冀阳.核工程基本原理.北京：清华大学出版社，2018</p>
+<p>2. 俞冀阳.核电厂系统与运行.北京：清华大学出版社，2016</p>
+<p>3. 2024年中国核电行业研究报告，2024</p>
+<p>4. 中国广核电力股份有限公司网页</p>
+<p>5. 中国核安全局网页</p>
+</div>
+
+    </main>
+    <footer>
+        <p>© 张武杰 2022080182 工物22</p>
+    </footer>
+</body>
+</html>

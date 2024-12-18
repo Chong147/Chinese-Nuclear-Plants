@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>昌江核电厂与昌江小堆示范工程</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #4b0082;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        main img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        main p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        main li {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        .quiz {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(240, 248, 255, 0.9);
+            border-radius: 10px;
+        }
+        .quiz h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .quiz button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4b0082;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quiz button:hover {
+            background-color: #6a0dad;
+        }
+        .quiz .result {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            animation: float-up 1.5s ease-out both;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #4b0082;
+        }
+        footer a {
+            color: #4b0082;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @keyframes float-up {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function checkAnswer(answer) {
+            const result = document.getElementById("quiz-result");
+
+            // 重置动画
+            result.style.animation = 'none';  // 先移除当前动画
+            result.offsetHeight;  // 触发重绘
+            result.style.animation = 'float-up 1.5s ease-out both';  // 再次应用动画
+
+            if (answer === "150吨") {
+                result.textContent = "正确答案，海南昌江核电站一期工程两台核电机组全面建成投产发电。按单台65万千瓦核电机组年发电量50亿度计算，相当于节约标煤150万吨，减排374万吨二氧化碳和2.9万吨二氧化硫，相当于每3年再造一座五指山森林公园。";
+                result.style.color = "green";
+            } else {
+                result.textContent = "不正确，再想一想吧！";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>昌江核电厂与昌江小堆示范工程</h1>
+    </header>
+    <main>
+        
+<h2>地理位置</h2>
+<p>中国海南省昌江县</p>
+
+<h2>核电厂历史</h2>
+<p>昌江核电厂是海南岛唯一的核电厂，共有6台机组，其各机组建成时间如下：
+<p>1号机组于2010年4月25日开工建设，于2015年11月7日并网成功，并在2015年12月25日正式商转。</p>
+<p>2号机组于2010年11月21日开工建设，于2016年6月20日并网成功，并在2016年8月12日正式商转。</p>
+<p>3号机组于2021年3月31日开工建设，并预期在2026年完成商转。</p>
+<p>4号机组于2021年12月28日开工建设，并预期在2027年完成商转。</p>
+<p>5号机组于2021年7月13日开工建设，并预期在2026年完成商转。</p>
+
+<h2>堆型与数量</h2>
+<p>截至2024年11月，阳江核电厂共拥有2台运行中的CNP-600型号压水堆机组（1，2号）。除此之外，它有2台在建华龙一号压水堆机组（3，4号）与一台在建玲珑一号压水堆机组（5号）。
+
+<h2>发电基本原理</h2>
+<p><p>压水堆（Pressurized Water Reactor）是采用高压水来冷却核燃料的一种反应堆，其工作原理为：主泵将120～160个大气压的一回路冷却水送入堆芯，把核燃料放出的热能带出堆芯，而后进入蒸汽发生器，
+通过传热管把热量传给二回路水，使其沸腾并产生蒸汽，常在一回路水中加入硼酸，用以控制反应性的慢变化。之后，二回路产生的高压蒸汽会推动汽轮机发电，再经过冷凝器和预热器进入蒸汽发生器，完成二回路水循环。</p>
+<div style="text-align: center; margin: 20px 0;">
+<img src="yashuidui.png" alt="压水堆" style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+<p>图1：压水堆示意图</p>
+</div>
+
+<h2>荣誉与贡献</h2>
+<p>近年来，海南正在“构建以清洁煤电、核电为主力电源，燃气和抽水蓄能为调峰电源，以可再生能源为重要组成部分的电源结构”。核电投产后，海南全社会电源种类已经增至八种，分别是煤电、水电、气电、核电、风电、光伏、生物质能和余热发电。
+其中昌江核电厂的建成大幅提高了海南清洁能源份量，让海南清洁能源占比由29%提高到了42%。国家能源局官网的信息显示，据统计换算，海南清洁能源2017年发电总量相当于节约标煤334万吨，减少二氧化碳排放888.44万吨，减少二氧化硫排放6.55万吨，
+这其中就不乏昌江核电厂的杰出贡献。</p>
+
+        <img src="changjiang.png" alt="昌江核电厂与昌江小堆示范工程">
+                        <div style="text-align: center; margin: 20px 0;">
+            <p>图2：昌江核电厂全景</p>
+        </div>
+        <div class="quiz">
+            <h2>按昌江核电厂单台65万千瓦核电机组年发电量50亿千瓦时计算，相当于一年节约标煤多少吨？</h2>
+            <button onclick="checkAnswer('50吨')">50吨</button>
+            <button onclick="checkAnswer('100吨')">100吨</button>
+            <button onclick="checkAnswer('150吨')">150吨</button>
+            <div id="quiz-result" class="result"></div>
+        </div>
+        <p><strong>参考文献</strong></p>
+        <p>1. 俞冀阳.核工程基本原理.北京：清华大学出版社，2018</p>
+        <p>2. 俞冀阳.核电厂系统与运行.北京：清华大学出版社，2016</p>
+        <p>3. 2024年中国核电行业研究报告，2024</p>
+        <p>4. 中国科学院上海应用物理研究所.浅谈沸水堆与压水堆，2011</p>
+        <p>6. 国家核安全局网站</p>
+        <p>7. 国家原子能机构.海南核电比例全国第一 清洁能源体系构建进行时，2018</p>
+    </main>
+    <footer>
+        <p>© 张武杰 2022080182 工物22</p>
+    </footer>
+</body>
+</html>
